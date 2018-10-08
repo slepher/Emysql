@@ -8,7 +8,7 @@
     {modules, []}, 
     {mod, {emysql_app, ["%MAKETIME%"]}},
     {registered, [emysql_conn_mgr, emysql_sup]},
-    {applications, [kernel, stdlib, crypto]},
+    {applications, [kernel, stdlib, crypto, erl_utils]},
     {env, [
            {default_timeout,  5000},
            {conn_test_period, 28000},
